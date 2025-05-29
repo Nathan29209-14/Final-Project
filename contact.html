@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DriveEasy - Choose Leasing</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 40px;
+      }
+
+      .leasing-button {
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .leasing-button:hover {
+        background-color: #0056b3;
+      }
+
+      .option-section,
+      .leasing-form {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        max-width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .option-section label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .leasing-form input,
+      .leasing-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+      }
+
+      .leasing-form button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        cursor: pointer;
+      }
+
+      .leasing-form button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="leasing-button" onclick="showOptions()">
+      Leasing Options
+    </button>
+
+    <div class="option-section" id="leasingOptions">
+      <label
+        ><input type="radio" name="leasing" value="car" onchange="showForm()" />
+        Car Leasing</label
+      >
+      <label
+        ><input type="radio" name="leasing" value="van" onchange="showForm()" />
+        Van Leasing</label
+      >
+    </div>
+
+    <div class="leasing-form" id="leasingForm">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function showOptions() {
+        document.getElementById("leasingOptions").style.display = "block";
+      }
+
+      function showForm() {
+        document.getElementById("leasingForm").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
