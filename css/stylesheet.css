@@ -2,6 +2,38 @@ body {
   background-color: #d9d9d9;
 }
 
+
+
+
+
+.navbar {
+    border: 8px solid #cccccc;
+    padding: 11px;
+    background-color: #add8e6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #0f2b46;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+}
+  
+
+
 /* Hover effect for navbar links */
 nav a:hover {
   background-color: #00d5ff; /* Brown background */
