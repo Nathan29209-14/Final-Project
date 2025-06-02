@@ -34,11 +34,10 @@
 
 /* Hero Section */
 
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-    top: 45rem;
+  top: 45rem;
 }
 
 .hero p {
@@ -46,10 +45,10 @@
   margin-bottom: 1.5rem;
 }
 
-.hero-content{
-    color: #ffffff;
-    top: 70px;
-      text-align: center;
+.hero-content {
+  color: #ffffff;
+  top: 70px;
+  text-align: center;
 }
 
 .btn {
@@ -60,7 +59,6 @@
   border-radius: 5px;
   font-weight: bold;
 }
-
 
 /* Why Choose Us */
 .why-choose {
@@ -81,7 +79,7 @@
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 250px;
 }
 
@@ -98,7 +96,7 @@
   padding: 1rem;
   max-width: 500px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -132,7 +130,7 @@ footer .socials a {
 .deal-card {
   background: #f9fafb;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   width: 250px;
   text-align: center;

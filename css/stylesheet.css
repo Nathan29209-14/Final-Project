@@ -2,37 +2,31 @@ body {
   background-color: #d9d9d9;
 }
 
-
-
-
-
 .navbar {
-    border: 8px solid #cccccc;
-    padding: 11px;
-    background-color: #add8e6;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
+  border: 8px solid #cccccc;
+  padding: 11px;
+  background-color: #add8e6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
 }
 
 .nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
 }
 
 .nav-link {
-    color: #0f2b46;
-    text-decoration: none;
-    font-size: x-large;
-    font-weight: bold;
+  color: #0f2b46;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
 }
-  
-
 
 /* Hover effect for navbar links */
 nav a:hover {
@@ -113,4 +107,40 @@ nav a:hover {
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+
+.offers {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 4%;
+  box-shadow: 2%;
+  transition: background 0.3 ease;
+}
+
+.offers img {
+  width: 350px;
+  border-radius: 5%;
+  transition: transform 0.3 ease;
+  margin-left: 10.5%;
+}
+
+.offers img:hover {
+  transform: scale(1.05);
+}
+
+.buy {
+  margin-top: 1rem;
+  background-color: #a8a8a8;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5%;
+  transition: transform 0.3 ease, background-color 0.3 ease;
+}
+
+.buy:hover {
+  transform: scale(1.1);
 }
