@@ -5,7 +5,7 @@ body {
 .navbar {
   border: 8px solid #cccccc;
   padding: 11px;
-  background-color: #add8e6;
+  background-color: #e0f0fa;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -133,6 +133,20 @@ nav a:hover {
   border-radius: 4%;
   box-shadow: 2%;
   transition: background 0.3 ease;
+  animation: carh 1.5s ease-out;
+  animation-timeline: view();
+  animation-range: entry -40% contain 35%;
+}
+
+@keyframes carh {
+  from {
+    opacity: 0;
+    transform: translateY(150px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .offers img {
@@ -158,4 +172,43 @@ nav a:hover {
 
 .buy:hover {
   transform: scale(1.1);
+}
+
+.typography1 {
+  font-family: "DIN", Arial, sans-serif; /* Specific font */
+  -webkit-font-variant-ligatures: none; /* Disable ligatures for WebKit */
+  font-variant-ligatures: none; /* Disable ligatures */
+  font-size: 100%;
+  line-height: 2; /* Line spacing */
+  color: #000000; /* Dark gray text */
+  float: right; /* Float text to right */
+}
+
+/* Content container styling */
+.content {
+  padding: 2%;
+  color: #2a2e30; /* Medium gray text */
+  grid-template-columns: 1fr 1fr; /* Two-column grid layout (not fully enabled) */
+  gap: 5%; /* Gap between grid items */
+}
+
+/* Images inside content floated right and styled */
+.content img {
+  float: right;
+  margin-left: 10%; /* Space between image and text */
+  width: 27%;
+  height: 27%;
+  border-radius: 5%; /* Rounded corners */
+}
+
+/* Clear floats after content */
+.content::after {
+  display: block;
+  clear: both;
+}
+
+/* Header title styles */
+.header-title {
+  text-align: left; /* Center the header text */
+  color: rgb(0, 0, 0); /* Black text */
 }
