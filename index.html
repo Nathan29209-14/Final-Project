@@ -34,18 +34,31 @@ Date Last Modified: june 5 -->
     color: white;
     text-align: center;
     padding: 13rem 1rem;
-    background-image: url(img/wall1.jpg);
+    background-image: url(img/wall2.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+    animation: zoomIn 0.6s ease-in-out forwards;
 }
+
+@keyframes zoomIn {
+    from {
+    opacity: 0;
+    transform: scale(1.1);
+    }
+    to {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
 
 
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(img/wall2.jpg);
+    background-image: url(img/wall1.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -53,12 +66,6 @@ Date Last Modified: june 5 -->
     animation: fade 5s infinite;
     transition: opacity 2s ease-in-out;
     z-index: 0;
-}
-
-
-.hero-content {
-    position: relative;
-    z-index: 1;
 }
 
 @keyframes fade {
@@ -72,6 +79,26 @@ Date Last Modified: june 5 -->
         opacity: 0;
     }
 }
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: zoomout 0.6s ease-in-out forwards;
+}
+
+@keyframes zoomout {
+    from {
+    transform: scale(1.7);
+    opacity: 0;
+    }
+    to {
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+
+
 
 
 .hr {
