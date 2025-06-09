@@ -9,7 +9,7 @@ School: Ptc
 Date Last Modified: june 5 */
 
 /* Set background for everything */
-* {
+body {
   background-color: #f0f0f0;
 }
 

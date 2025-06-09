@@ -31,7 +31,7 @@ body {
 /* Hover effect for navbar links */
 nav a:hover {
   background-color: #00d5ff; /* light blue background */
-  color: whitesmoke;
+  color: rgb(13, 0, 255);
   border-radius: 6%;
 }
 
