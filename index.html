@@ -12,20 +12,19 @@ Date Last Modified: june 5 -->
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-    <!-- Character encoding for the document -->
     <meta charset="UTF-8" />
-    <!-- Responsive design for different devices -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Description of the webpage content -->
-    <meta name="description" content="Learn about DriveEasy">
+    <meta name="description" content="Learn about DriveEasy/Home page">
     <!-- Title shown in browser tab -->
     <title>𝒟𝓇𝒾𝓋ℯ𝐸𝒶𝓈𝓎</title> <!--made a font for the title it's looks nice-->
-    <!-- Favicon displayed in the browser tab -->
+
     <link rel="icon" href="img/windowtab.png" sizes="128x128" type="image/png">
     <!-- External stylesheet link -->
     <link rel="stylesheet" href="css/stylesheet.css" />
     <style>
-      /* Styles for a div with id 'div' and its hover effect */
+
 
 
 .hero {
@@ -42,11 +41,11 @@ Date Last Modified: june 5 -->
 }
 
 @keyframes zoomIn {
-    from {
-    opacity: 0;
-    transform: scale(1.1);
+    from { /* start */
+    opacity: 0; /* visible */
+    transform: scale(1.1); /* how big you want it */
     }
-    to {
+    to { /* end*/
     opacity: 1;
     transform: scale(1);
     }
@@ -55,7 +54,7 @@ Date Last Modified: june 5 -->
 
 
 .hero::after {
-    content: "";
+    content: ""; /* makes a blank box to style */
     position: absolute;
     inset: 0;
     background-image: url(img/wall1.jpg);
@@ -64,25 +63,25 @@ Date Last Modified: june 5 -->
     background-position: center;
     opacity: 0;
     animation: fade 5s infinite;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out; /* ease-in-out means it starts slow then speeds up then slows down at the end */
     z-index: 0;
 }
 
 @keyframes fade {
     0%, 40% {
-        opacity: 0;
+        opacity: 0; /* here it becomes invisible */
     }
     50%, 90% {
-        opacity: 1;
+        opacity: 1; /* becomes fully see able */
     }
     100% {
-        opacity: 0;
+        opacity: 0; /*becomes invisible again*/
     }
 }
 
 
 .hero-content {
-    position: relative;
+    position: relative; /* stay in a normal state */
     z-index: 1;
     animation: zoomout 0.6s ease-in-out forwards;
 }
@@ -243,7 +242,7 @@ img:hover {
 
 <hr class="hr">
 <div style="width: 100%; max-width: 100%; height: 550px; overflow: hidden; position: relative;">
-    <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+    <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;"> <!-- plays by it self and repeats and makes sure it's stays in the box-->
     <source src="img/vecteezy_a-black-car-on-the-sea-beach-at-sunset_22966647.mp4" type="video/mp4">
     </video>
 </div>

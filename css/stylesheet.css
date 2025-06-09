@@ -30,7 +30,7 @@ body {
 
 /* Hover effect for navbar links */
 nav a:hover {
-  background-color: #00d5ff; /* Brown background */
+  background-color: #00d5ff; /* light blue background */
   color: whitesmoke;
   border-radius: 6%;
 }
@@ -95,12 +95,12 @@ nav a:hover {
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0; /* visible */
     transform: translateY(150px) scale(0.8);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1); /* how big you want it */ /* moves down */
   }
 }
 
@@ -122,7 +122,7 @@ nav a:hover {
   text-align: center;
   transition: transform 0.3s ease; /* Smooth scaling */
   overflow: hidden; /* Hide overflow */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* shadow */
 }
 
 .deal-card:hover {
@@ -131,7 +131,7 @@ nav a:hover {
 
 .deal-card img {
   width: 90%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
   display: block;
 }
 
@@ -162,7 +162,7 @@ nav a:hover {
   color: white;
   padding: 0.6rem;
   border: none;
-  border-radius: 5%;
+  border-radius: 20%;
   transition: transform 0.3 ease, background-color 0.3 ease;
 }
 
@@ -175,11 +175,11 @@ nav a:hover {
 }
 
 .typography1 {
-  font-family: "DIN", Arial, sans-serif; /* Specific font */
-  -webkit-font-variant-ligatures: none; /* Disable ligatures for WebKit */
-  font-variant-ligatures: none; /* Disable ligatures */
+  font-family: "DIN", Arial, sans-serif;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
   font-size: 100%;
-  line-height: 2; /* Line spacing */
+  line-height: 3; /* Line spacing */
   color: #000000; /* Dark gray text */
   float: right; /* Float text to right */
   animation: zoomouti 0.6s ease-in-out forwards;
@@ -187,8 +187,8 @@ nav a:hover {
 
 @keyframes zoomouti {
   from {
-    transform: scale(1.1);
-    opacity: 0;
+    transform: scale(1.1); /* how big you want it */
+    opacity: 0; /* visible */
   }
   to {
     transform: scale(1);
@@ -199,8 +199,8 @@ nav a:hover {
 /* Content container styling */
 .content {
   padding: 2%;
-  color: #2a2e30; /* Medium gray text */
-  grid-template-columns: 1fr 1fr; /* Two-column grid layout (not fully enabled) */
+  color: #2a2e30; /*  gray text */
+  grid-template-columns: 1fr 1fr;
   gap: 5%; /* Gap between grid items */
 }
 
@@ -211,10 +211,10 @@ nav a:hover {
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(1.1); /* how big you want it */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* visible */
     transform: scale(1);
   }
 }

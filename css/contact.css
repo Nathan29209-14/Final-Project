@@ -8,7 +8,7 @@ School: Ptc
 
 Date Last Modified: june 5 */
 
-/* Set dark background for everything */
+/* Set background for everything */
 * {
   background-color: #f0f0f0;
 }
@@ -60,12 +60,12 @@ nav a:hover {
 input {
   background-color: white; /* White background */
   width: 70%; /* Set width */
-  margin-left: 12%; /* Move it to the center */
+  margin-left: 12%;
   font-size: 20px;
-  padding: 16px 16px; /* Add space inside the box */
-  border-radius: 10px; /* Make corners round */
+  padding: 16px 16px;
+  border-radius: 10px;
   border-color: rgb(80, 80, 80);
-  margin-bottom: 20px; /* Space below the input */
+  margin-bottom: 20px;
 }
 
 /* Style the text area box (for longer text) */
