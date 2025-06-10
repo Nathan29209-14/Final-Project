@@ -19,6 +19,7 @@ body {
   margin: 0;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -238,4 +239,12 @@ nav a:hover {
 .header-title {
   text-align: left; /* Center the header text */
   color: rgb(0, 0, 0); /* Black text */
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
