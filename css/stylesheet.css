@@ -8,23 +8,23 @@ body {
   background-color: #e0f0fa;
   color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
+  justify-content: space-between; /* space between items */
+  align-items: center; /* puts everything in the center */
+  position: sticky; /* stays on the top */
 }
 
 .nav-menu {
-  list-style: none;
+  list-style: none; /* remove bullet points */
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 1rem; /* space like the gap between stuff */
+  flex-wrap: wrap; /* it wraps items to the next line if it's needed */
 }
 
 .nav-link {
-  color: #0f2b46;
-  text-decoration: none;
+  color: #0f2b46; /* dark blue text */
+  text-decoration: none; /* remove underline */
   font-size: x-large;
   font-weight: bold;
 }
@@ -32,8 +32,8 @@ body {
 /* Hover effect for navbar links */
 nav a:hover {
   background-color: #00d5ff; /* light blue background */
-  color: rgb(13, 0, 255);
-  border-radius: 6%;
+  color: rgb(13, 0, 255); /* dark blue text on hove */
+  border-radius: 6%; /* rounded corners */
 }
 
 .a1234 {
@@ -41,7 +41,7 @@ nav a:hover {
 }
 
 .hero-content {
-  color: #ffffff;
+  color: #ffffff; /* white text */
   top: 70px;
   text-align: center;
   font-size: xx-large;
@@ -49,38 +49,38 @@ nav a:hover {
 
 .btn {
   padding: 0.8rem 1.5rem;
-  background: #7f807f;
-  color: #ffffff;
+  background: #7f807f; /* gray background color */
+  color: #ffffff; /* white text */
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   font-size: large;
   transition: background-color 0.3s ease, transform 0.3s ease;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* shadow */
 }
 
 .btn:hover {
   background-color: #6a6b6a; /* change on hover */
-  transform: scale(1.05);
+  transform: scale(1.05); /* makes it bigger */
 }
 
 .offers-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* makes it into equal columns */
   gap: 2rem;
   padding: 1rem 2rem;
-  animation: zoomIn 0.6s ease-in-out forwards;
+  animation: zoomIn 0.6s ease-in-out forwards; /* zoom in animation */
 }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(1.1); /* little bit bigger */
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1); /* normal size */
   }
 }
 
@@ -93,7 +93,7 @@ nav a:hover {
   animation-timeline: view();
   animation-range: entry -20% contain 100%;
 }
-
+/* fade in animation */
 @keyframes fadeIn {
   from {
     opacity: 0; /* visible */
@@ -108,14 +108,14 @@ nav a:hover {
 .deal-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* center horizontally */
   gap: 3rem;
   margin-top: 1rem;
 }
-
+/* card styling */
 .deal-card {
-  background: #cccccc;
-  border-radius: 4%;
+  background: #cccccc; /* light grey background */
+  border-radius: 4%; /* rounded corners */
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   width: 350px;
@@ -137,9 +137,9 @@ nav a:hover {
 }
 
 .deal-card img {
-  width: 100%;
+  width: 100%; /* full width */
   height: 250px;
-  object-fit: cover;
+  object-fit: cover; /* cover container without distortion */
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -159,16 +159,16 @@ nav a:hover {
 
 .buy {
   margin-top: 1rem;
-  background-color: #a8a8a8;
+  background-color: #a8a8a8; /* light grey background color */
   color: white;
   padding: 0.6rem;
   border: none;
-  border-radius: 20%;
+  border-radius: 20%; /* rounded corners */
   transition: transform 0.3 ease, background-color 0.3 ease;
 }
 
 .buy:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* make it bigger */
 }
 
 .buy {
@@ -180,7 +180,7 @@ nav a:hover {
   -webkit-font-variant-ligatures: none;
   font-variant-ligatures: none;
   font-size: 100%;
-  line-height: 3; /* Line spacing */
+  line-height: 3; /* spacing between lines  */
   color: #000000; /* Dark gray text */
   float: right; /* Float text to right */
   animation: zoomouti 0.6s ease-in-out forwards;
@@ -204,7 +204,7 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 5%; /* Gap between grid items */
 }
-
+/* Animation class for zoom in effect */
 .outin {
   animation: zoomIn 0.6s ease-in-out forwards;
 }
@@ -223,10 +223,10 @@ nav a:hover {
 /* Images inside content floated right and styled */
 .content img {
   float: right;
-  margin-left: 10%; /* Space between image and text */
+  margin-left: 10%; /* the space between image and text */
   width: 27%;
   height: 27%;
-  border-radius: 5%; /* Rounded corners */
+  border-radius: 5%; /* rounded corners */
 }
 
 /* Clear floats after content */
@@ -246,5 +246,5 @@ textarea,
 button {
   width: 100%;
   max-width: 400px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* it's include padding and border in width */
 }
