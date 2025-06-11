@@ -1,12 +1,4 @@
-<!-- Name: Nathan senanayake 
 
-Course: PTEC 
-
-Teacher:  A. Hoitink
-
-School: Ptc 
-
-Date Last Modified: june 5 -->
 
 
 <!DOCTYPE html>
@@ -30,13 +22,13 @@ Date Last Modified: june 5 -->
 .hero {
     position: relative;
     z-index: 1;
-    color: white;
+    color: white; /* text white */
     text-align: center;
     padding: 13rem 1rem;
-    background-image: url(img/wall2.jpg);
-    background-repeat: no-repeat;
+    background-image: url(img/wall2.jpg); /* background image */
+    background-repeat: no-repeat; /* image to not repeat */
     background-size: 100% auto;
-    background-position: center;
+    background-position: center; /* center */
     animation: zoomIn 0.6s ease-in-out forwards;
 }
 
@@ -57,12 +49,12 @@ Date Last Modified: june 5 -->
     content: ""; /* makes a blank box to style */
     position: absolute;
     inset: 0;
-    background-image: url(img/wall1.jpg);
+    background-image: url(img/wall1.jpg); /* background image */
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0;
-    animation: fade 5s infinite;
+    background-position: center; /* center */
+    opacity: 0; /* visible */
+    animation: fade 5s infinite; /* animantion name (fade) */
     transition: opacity 2s ease-in-out; /* ease-in-out means it starts slow then speeds up then slows down at the end */
     z-index: 0;
 }
@@ -87,9 +79,9 @@ Date Last Modified: june 5 -->
 }
 
 @keyframes zoomout {
-    from {
-    transform: scale(1.7);
-    opacity: 0;
+    from { /* the start */
+    transform: scale(1.7); /* how big you want it */
+    opacity: 0; /* visible */
     }
     to {
     transform: scale(1);
@@ -101,10 +93,10 @@ Date Last Modified: june 5 -->
 
 
 .hr {
-    border: 2px solid black;
-        height: 5px;
-        background-color: black;
-    width: 100%;
+    border: 2px solid black; /* black border */
+        height: 5px; /* the height */
+        background-color: black; /* the background color */
+    width: 100%; /* the width */
 }
 
       /* Sticky navigation bar */
@@ -151,7 +143,7 @@ img:hover {
         padding: 0;
         margin: 0;
         display: flex;
-        gap: 1rem;
+        gap: 1rem; 
         " tabindex="12">
         <li style="display: inline">
             <!-- Home page link -->
@@ -197,43 +189,43 @@ img:hover {
     <div class="hero-content">
         <h1>Lease your Car Today </h1>
             <p>Find Your Ride Today </p>
-        <a href="car.html" class="btn">Car leasing deals</a>
+        <a href="car.html" class="btn">Car leasing deals</a> <!-- the heading-->
     </div>
     </div>
     <hr class="hr">
 
         <!-- Top Deals -->
-<section class="top-deals">
+<section class="top-deals"> <!-- the top deals-->
     <h2>Top Deals Now</h2>  
     <div class="deal-cards">
     <div class="deal-card">
-        <a href="contact.html" class="deal-cards">
+        <a href="contact.html" class="deal-cards"> <!-- take you to contact when click on image-->
         <img src="img/car1.webp" alt="Porsche Taycan" />
     </a>
-        <h3>Porsche Taycan</h3>
-        <p>$3,700/month lease</p>
+        <h3>Porsche Taycan</h3> <!-- name of the car-->
+        <p>$3,700/month lease</p> <!-- the price of the car-->
     </div>
 
 <!--top card-->
 
     <div class="deal-card">
-        <a href="contact.html" class="deal-cards">
+        <a href="contact.html" class="deal-cards"><!-- take you to contact when click on image-->
         <img src="img/car2.webp" alt="BMW M8" />
     </a>
-        <h3>BMW M8</h3>
-        <p>$900/month lease</p>
+        <h3>BMW M8</h3><!-- name of the car-->
+        <p>$900/month lease</p><!-- the price of the car-->
     </div>
     <div class="deal-card">
-        <a href="contact.html" class="deal-cards">
+        <a href="contact.html" class="deal-cards"><!-- take you to contact when click on image-->
         <img src="img/car3.webp" alt="Audi RS E-Tron GT" />
     </a>
-        <h3>Audi RS E-Tron GT</h3>
-        <p>$1,950/month lease</p>
+        <h3>Audi RS E-Tron GT</h3><!-- name of the car-->
+        <p>$1,950/month lease</p><!-- the price of the car-->
         
     </div>
     </div>
     <br>
-    <a href="car.html" class="btn">Car leasing deals</a> 
+    <a href="car.html" class="btn">Car leasing deals</a>  <!-- button that takes you to the car leasing deals webpage-->
 </section>
 
 <!--vid-->
@@ -241,7 +233,7 @@ img:hover {
 <hr class="hr">
 <div style="width: 100%; max-width: 100%; height: 550px; overflow: hidden; position: relative;">
     <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;"> <!-- plays by it self and repeats and makes sure it's stays in the box-->
-    <source src="img/vecteezy_a-black-car-on-the-sea-beach-at-sunset_22966647.mp4" type="video/mp4">
+    <source src="img/vecteezy_a-black-car-on-the-sea-beach-at-sunset_22966647.mp4" type="video/mp4"> <!-- video link-->
     </video>
 </div>
 <hr class="hr">
@@ -249,58 +241,70 @@ img:hover {
 
 
 <!--contact-->
-<br />
-<footer>
-<h1><u>Contact</u></h1>
-<br />
 
-<p><u>Phone number: 019-098-990</u></p>
-<br />
-<p><u>Mon-Fri 9am-5:30pm</u></p>
-<br />
-<p><u>sales@lingscars.com</u></p>
+    <!--contact-->
+    <br />
+    <footer>
+        <h1><u>Contact</u></h1>
+        <!-- Contact / title -->
+        <br />
 
+        <p><u>Phone number: 019-098-990</u></p>
+        <!-- the phone number-->
+        <br />
+        <p><u>Mon-Fri 9am-5:30pm</u></p>
+        <!-- when the store is open-->
+        <br />
+        <p><u>sales@lingscars.com</u></p>
+        <!-- the email-->
 
-<div style="text-align: right; margin-top: 10px; margin-right: 8%">
-    <h1 style="position: relative; top: -17rem; margin-bottom: 0">
-    <u>Information</u>
-    </h1>
-    <a
-    href="aboutus.html"
-    style="
-        position: relative;
-        top: -14.5rem;
-        margin-bottom: 0;
-        margin-right: 5%;
-    "
-    >About us</a
-    >
-</div>
+        <!-- Add this snippet where you want the title + text -->
+        <div style="text-align: right; margin-top: 10px; margin-right: 8%">
+        <h1 style="position: relative; top: -17rem; margin-bottom: 0">
+            <u>Information</u>
+            <!-- information/ title-->
+        </h1>
+        <a
+            href="aboutus.html"
+            style="
+            position: relative;
+            top: -14.5rem;
+            margin-bottom: 0;
+            margin-right: 5%;
+            "
+            >About us</a
+        >
+        <!-- link that takes you to about us page-->
+        </div>
 
-<a href="https://www.youtube.com/user/lingscars">
-    <img
-    src="img/youtube.png"
-    alt="youtube logo"
-    height="60px"
-    width="65px" />
-</a>
-<a href="https://www.instagram.com/lings_cars/?hl=en">
-    <img
-    src="img/insta.jfif"
-    alt="Instagram logo"
-    height="60px"
-    width="70px" />
-</a>
-<a href="https://www.facebook.com/lingscars/">
-    <img
-    src="img/facebook-2019-05-21.webp"
-    alt="Facebook logo"
-    height="60px"
-    width="70px" />
-    <!--facebook link not working so it won't load on the webpage-->
-</a>
-</footer>
-
+        <a href="https://www.youtube.com/user/lingscars">
+        <!-- ling cars channel-->
+        <img
+            src="img/youtube.png"
+            alt="youtube logo"
+            height="60px"
+            width="65px" />
+        <!-- youtube logo-->
+        </a>
+        <a href="https://www.instagram.com/lings_cars/?hl=en">
+        <!-- lingcar instagram profile-->
+        <img
+            src="img/insta.jfif"
+            alt="Instagram logo"
+            height="60px"
+            width="70px" /><!-- instagram logo-->
+        </a>
+        <a href="https://www.facebook.com/lingscars/">
+        <!-- lingcar facebook profile but the link is not working-->
+        <img
+            src="img/facebook-2019-05-21.webp"
+            alt="Facebook logo"
+            height="60px"
+            width="70px" />
+        <!-- facebook logo-->
+        <!--facebook link not working so it won't load on the webpage-->
+        </a>
+    </footer>
 
 
 
