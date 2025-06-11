@@ -1,13 +1,3 @@
-<!-- Name: Nathan senanayake 
-
-Course: PTEC 
-
-Teacher:  A. Hoitink
-
-School: Ptc 
-
-Date Last Modified: june 5 -->
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -46,7 +36,7 @@ Date Last Modified: june 5 -->
     .price {
       display: flex; /* flex layout */
       flex-direction: column;
-      align-items: flex-start;  /* Aligns items to the left */
+      align-items: flex-start; /* Aligns items to the left */
       margin-left: 1rem;
       animation: zoomout 0.6s ease-in-out forwards; /* Runs the zoom animation once */
     }
@@ -65,8 +55,8 @@ Date Last Modified: june 5 -->
     .price h3,
     .price p,
     .price a {
-      margin: 0;  /* removes margin */
-      padding: 0;  /* removes padding */
+      margin: 0; /* removes margin */
+      padding: 0; /* removes padding */
     }
 
     .span {
@@ -87,7 +77,7 @@ Date Last Modified: june 5 -->
       border-radius: 3%;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Adds a soft drop shadow */
       padding: 0.5rem;
-      transition: background 0.3 ease;  /* Smooth background change on hover */
+      transition: background 0.3 ease; /* Smooth background change on hover */
       animation: carh 1.5s ease-out; /* animantion on card entry */
       animation-timeline: view();
       animation-range: entry -40% contain 35%;
@@ -107,10 +97,12 @@ Date Last Modified: june 5 -->
   <body>
     <nav class="navbar">
       <a href="index.html">
-        <img src="img/logo.png" alt="logo" height="100" width="150" /> <!-- company link-->
+        <img src="img/logo.png" alt="logo" height="100" width="150" />
+        <!-- company logo-->
       </a>
 
-      <ul class="nav-menu"> <!-- all the pages -->
+      <ul class="nav-menu">
+        <!-- all the pages -->
         <li><a href="index.html" class="nav-link" tabindex="12">Home</a></li>
         <li>
           <a href="van.html" class="nav-link" tabindex="12">Van leasing</a>
@@ -130,57 +122,70 @@ Date Last Modified: june 5 -->
     <main>
       <hr class="hr" />
       <h2 class="car">Car leasing deals</h2>
-        <!-- Grid container to hold all car offer sections -->
+      <!-- Grid container to hold all car offer sections -->
       <div class="offers-grid">
         <!--every section here is a car leasing options -->
-        <section class="offers"> <!--car offers starts here -->
+        <section class="offers">
+          <!--car offers starts here -->
           <img src="img/car8.webp" alt="BMW X6 M" width="100%" height="25%" />
           <div class="price">
-            <h3>BMW X6 M</h3> /* car Name
-            <p><span class="span"> 2,787$</span> per month</p> <!--price-->
+            <h3>BMW X6 M</h3>
+            /* car Name
+            <p><span class="span"> 2,787$</span> per month</p>
+            <!--price-->
             <p>
-              The BMW X6 M is a fast and powerful SUV that looks cool, feels <!-- fact about the car -->
+              The BMW X6 M is a fast and powerful SUV that looks cool, feels
+              <!-- fact about the car -->
               fancy inside, and drives like a sports car.
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!--press this to buy on the webpage-->
+              <button class="buy">Buy car</button>
+              <!--press this to buy on the webpage-->
             </a>
           </div>
         </section>
 
-
-        <!-- from here it's the same this with different car and prices -->
-
+        <!-- from here it's the same but instead there diferent cars and prices -->
 
         <section class="offers">
-          <img src="img/car4.webp" alt="Audi R8" width="100%" height="25%" /> <!-- image -->
+          <img src="img/car4.webp" alt="Audi R8" width="100%" height="25%" />
+          <!-- image -->
           <div class="price">
-            <h3>Audi R8</h3> <!--car name-->
-            <p><span class="span"> 4,758$</span> per month</p> <!--price-->
+            <h3>Audi R8</h3>
+            <!--car name-->
+            <p><span class="span"> 4,758$</span> per month</p>
+            <!--price-->
             <p>
               The Audi R8 is a super fast sports car that looks sharp, sounds
-              amazing, and is easy to drive for how powerful it is. <!-- fact about the car-->
+              amazing, and is easy to drive for how powerful it is.
+              <!-- fact about the car-->
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!--buy button-->
+              <button class="buy">Buy car</button>
+              <!--buy button-->
             </a>
           </div>
         </section>
 
         <section class="offers">
-          <img src="img/car5.webp" alt="Audi RS4" width="100%" height="25%" /> <!--car image-->
+          <img src="img/car5.webp" alt="Audi RS4" width="100%" height="25%" />
+          <!--car image-->
           <div class="price">
-            <h3>Audi RS4</h3> <!-- car name-->
-            <p><span class="span"> 3,756$</span> per month</p> <!-- price monthly-->
+            <h3>Audi RS4</h3>
+            <!-- car name-->
+            <p><span class="span"> 3,756$</span> per month</p>
+            <!-- price monthly-->
             <p>
               The Audi RS4 is a fast and strong car that looks sporty, has lots
-              of space like a family car, and handles really well on the road. <!-- fact about the car-->
+              of space like a family car, and handles really well on the road.
+              <!-- fact about the car-->
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!-- the buy button-->
+              <button class="buy">Buy car</button>
+              <!-- the buy button-->
             </a>
           </div>
         </section>
@@ -190,37 +195,46 @@ Date Last Modified: june 5 -->
             src="img/car6.webp"
             alt="Lotus Emira"
             width="100%"
-            height="25%" /> <!--car image -->
+            height="25%" />
+          <!--car image -->
           <div class="price">
-            <h3>Lotus Emira</h3> <!-- the car name-->
-            <p><span class="span"> 4,465$</span> per month</p> <!-- the price-->
+            <h3>Lotus Emira</h3>
+            <!-- the car name-->
+            <p><span class="span"> 4,465$</span> per month</p>
+            <!-- the price-->
             <p>
               The Lotus Emira is a light and sporty car thats fun to drive,
-              looks cool, and feels smooth and quick on twisty roads. <!-- a cool fact about the car-->
+              looks cool, and feels smooth and quick on twisty roads.
+              <!-- a cool fact about the car-->
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!--the buy button-->
+              <button class="buy">Buy car</button>
+              <!--the buy button-->
             </a>
           </div>
         </section>
 
         <section class="offers">
-          <img src="img/car7.webp" alt="BMW M8" width="100%" height="25%" /> <!-- car image-->
+          <img src="img/car7.webp" alt="BMW M8" width="100%" height="25%" />
+          <!-- car image-->
           <div class="price">
-            <h3>BMW M8</h3> <!-- car name-->
-            <p><span class="span"> 900$</span> per month</p> <!-- price -->
+            <h3>BMW M8</h3>
+            <!-- car name-->
+            <p><span class="span"> 900$</span> per month</p>
+            <!-- price -->
             <p>
               The BMW M8 is a super fast luxury car that looks sleek, feels
-              fancy inside, and drives like a high-performance sports car. <!-- fact about the car-->
+              fancy inside, and drives like a high-performance sports car.
+              <!-- fact about the car-->
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!-- the buy button-->
+              <button class="buy">Buy car</button>
+              <!-- the buy button-->
             </a>
           </div>
         </section>
-
 
         <!-- the same thing for the rest -->
 
@@ -229,14 +243,18 @@ Date Last Modified: june 5 -->
             src="img/car9.jpg"
             alt="Rolls Royce phantom"
             width="100%"
-            height="25%" /> <!--car image-->
-          <div class="price"> 
-            <h3>Rolls Royce phantom</h3><!-- car name-->
-            <p><span class="span"> 30,250$</span> per month</p><!--price-->
+            height="25%" />
+          <!--car image-->
+          <div class="price">
+            <h3>Rolls Royce phantom</h3>
+            <!-- car name-->
+            <p><span class="span"> 30,250$</span> per month</p>
+            <!--price-->
             <p>
               The Rolls-Royce Phantom is a super luxury car that feels very
               smooth and quiet, has a beautiful design, and offers the most
-              comfortable and fancy ride you can get and it           <!-- fact about the car-->
+              comfortable and fancy ride you can get and it
+              <!-- fact about the car-->
               <span style="color: rgb(0, 0, 0); font-weight: bold"
                 >comes with a diamond sky interior</span
               >
@@ -244,7 +262,8 @@ Date Last Modified: june 5 -->
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!-- the buy button-->
+              <button class="buy">Buy car</button>
+              <!-- the buy button-->
             </a>
           </div>
         </section>
@@ -253,20 +272,25 @@ Date Last Modified: june 5 -->
 
         <section class="offers">
           <img
-            src="img/car10.png" 
+            src="img/car10.png"
             alt="Porsche Taycan"
             width="100%"
-            height="25%" /> <!-- the car image-->
+            height="25%" />
+          <!-- the car image-->
           <div class="price">
-            <h3>Porsche Taycan</h3><!-- the cra name-->
-            <p><span class="span"> 3,700$</span> per month</p> <!-- the price per month-->
+            <h3>Porsche Taycan</h3>
+            <!-- the cra name-->
+            <p><span class="span"> 3,700$</span> per month</p>
+            <!-- the price per month-->
             <p>
-              Porsche Taycan are known for being fast, fun to drive, and <!-- a cool fact about the car-->
+              Porsche Taycan are known for being fast, fun to drive, and
+              <!-- a cool fact about the car-->
               well-built, with a mix of sporty looks and everyday comfort.
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!-- the buy button-->
+              <button class="buy">Buy car</button>
+              <!-- the buy button-->
             </a>
           </div>
         </section>
@@ -276,18 +300,23 @@ Date Last Modified: june 5 -->
             src="img/car11.jpg"
             alt="Ferrari F12"
             width="100%"
-            height="25%" /> <!-- the car image -->
+            height="25%" />
+          <!-- the car image -->
           <div class="price">
-            <h3>Ferrari F12</h3> <!-- the car name-->
-            <p><span class="span"> 7,100$</span> per month</p> <!-- the price-->
+            <h3>Ferrari F12</h3>
+            <!-- the car name-->
+            <p><span class="span"> 7,100$</span> per month</p>
+            <!-- the price-->
             <p>
-              The Ferrari F12 is a very fast and powerful supercar with a loud <!-- fact about the car-->
+              The Ferrari F12 is a very fast and powerful supercar with a loud
+              <!-- fact about the car-->
               V12 engine, sharp looks, and amazing performance made for serious
               driving.
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button><!-- the buy button-->
+              <button class="buy">Buy car</button
+              ><!-- the buy button-->
             </a>
           </div>
         </section>
@@ -297,17 +326,22 @@ Date Last Modified: june 5 -->
             src="img/car12.jpg"
             alt="Ford Mustang"
             width="100%"
-            height="25%" /> <!-- car image-->
+            height="25%" />
+          <!-- car image-->
           <div class="price">
-            <h3>Ford Mustang</h3> <!-- car name-->
-            <p><span class="span"> 6,200$</span> per month</p> <!-- price-->
+            <h3>Ford Mustang</h3>
+            <!-- car name-->
+            <p><span class="span"> 6,200$</span> per month</p>
+            <!-- price-->
             <p>
-              The Ford Mustang is a classic muscle car thats powerful, fun to <!-- fact about the car-->
+              The Ford Mustang is a classic muscle car thats powerful, fun to
+              <!-- fact about the car-->
               drive, and has a bold, sporty style.
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!-- the buy button-->
+              <button class="buy">Buy car</button>
+              <!-- the buy button-->
             </a>
           </div>
         </section>
@@ -317,17 +351,22 @@ Date Last Modified: june 5 -->
             src="img/car13.jpg"
             alt="Tesla Model S "
             width="100%"
-            height="25%" /> <!--the car image-->
+            height="25%" />
+          <!--the car image-->
           <div class="price">
-            <h3>Tesla Model S</h3> <!-- the car name-->
-            <p><span class="span"> 5,350$</span> per month</p> <!-- car price-->
+            <h3>Tesla Model S</h3>
+            <!-- the car name-->
+            <p><span class="span"> 5,350$</span> per month</p>
+            <!-- car price-->
             <p>
-              The Tesla Model S is a fast electric car with a sleek design, lots <!-- fact about the car-->
+              The Tesla Model S is a fast electric car with a sleek design, lots
+              <!-- fact about the car-->
               of tech features, and a long driving range without gas.
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!-- the buy button-->
+              <button class="buy">Buy car</button>
+              <!-- the buy button-->
             </a>
           </div>
         </section>
@@ -337,18 +376,23 @@ Date Last Modified: june 5 -->
             src="img/car14.webp"
             alt="Pagani Zonda"
             width="100%"
-            height="25%" /> <!-- the car image-->
+            height="25%" />
+          <!-- the car image-->
           <div class="price">
-            <h3>Pagani Zonda</h3> <!-- the car name-->
-            <p><span class="span"> 35,250$</span> per month</p> <!-- car price-->
+            <h3>Pagani Zonda</h3>
+            <!-- the car name-->
+            <p><span class="span"> 35,250$</span> per month</p>
+            <!-- car price-->
             <p>
-              The Pagani Zonda is a rare, super fast sports car with a stunning <!-- cool fact-->
+              The Pagani Zonda is a rare, super fast sports car with a stunning
+              <!-- cool fact-->
               design, amazing speed, and handcrafted details that make it
               special and unique.
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!--the buy button-->
+              <button class="buy">Buy car</button>
+              <!--the buy button-->
             </a>
           </div>
         </section>
@@ -358,18 +402,23 @@ Date Last Modified: june 5 -->
             src="img/car15.png"
             alt="Bugatti Chiron"
             width="100%"
-            height="25%" /> <!-- the car image-->
+            height="25%" />
+          <!-- the car image-->
           <div class="price">
-            <h3>Bugatti Chiron</h3> <!-- car name-->
-            <p><span class="span"> 40,250$</span> per month</p> <!-- car price-->
+            <h3>Bugatti Chiron</h3>
+            <!-- car name-->
+            <p><span class="span"> 40,250$</span> per month</p>
+            <!-- car price-->
             <p>
-              The Bugatti Chiron is one of the fastest and most expensive <!-- cool fact about the car-->
+              The Bugatti Chiron is one of the fastest and most expensive
+              <!-- cool fact about the car-->
               supercars in the world, with incredible speed, luxury, and a
               powerful engine that makes it a true hypercar.
             </p>
             <!--fill in this later-->
             <a href="contact.html">
-              <button class="buy">Buy car</button> <!-- the buy button-->
+              <button class="buy">Buy car</button>
+              <!-- the buy button-->
             </a>
           </div>
         </section>
@@ -380,18 +429,23 @@ Date Last Modified: june 5 -->
     <!--contact-->
     <br />
     <footer>
-      <h1><u>Contact</u></h1> <!-- the contact-->
+      <h1><u>Contact</u></h1>
+      <!-- the contact-->
       <br />
 
-      <p><u>Phone number: 019-098-990</u></p> <!-- phone number-->
+      <p><u>Phone number: 019-098-990</u></p>
+      <!-- phone number-->
       <br />
-      <p><u>Mon-Fri 9am-5:30pm</u></p> <!-- when open-->
+      <p><u>Mon-Fri 9am-5:30pm</u></p>
+      <!-- when open-->
       <br />
-      <p><u>sales@lingscars.com</u></p> <!-- the email-->
+      <p><u>sales@lingscars.com</u></p>
+      <!-- the email-->
 
       <div style="text-align: right; margin-top: 10px; margin-right: 8%">
         <h1 style="position: relative; top: -17rem; margin-bottom: 0">
-          <u>Information</u> <!-- information-->
+          <u>Information</u>
+          <!-- information-->
         </h1>
         <a
           href="aboutus.html"
@@ -402,29 +456,36 @@ Date Last Modified: june 5 -->
             margin-right: 5%;
           "
           >About us</a
-        > <!-- about us page-->
+        >
+        <!-- about us page-->
       </div>
 
-      <a href="https://www.youtube.com/user/lingscars"> <!-- youtube channel lingcars-->
+      <a href="https://www.youtube.com/user/lingscars">
+        <!-- youtube channel lingcars-->
         <img
           src="img/youtube.png"
           alt="youtube logo"
           height="60px"
-          width="65px" /> <!-- youtube logo-->
+          width="65px" />
+        <!-- youtube logo-->
       </a>
-      <a href="https://www.instagram.com/lings_cars/?hl=en">  <!-- instagram profile-->
+      <a href="https://www.instagram.com/lings_cars/?hl=en">
+        <!-- instagram profile-->
         <img
           src="img/insta.jfif"
           alt="Instagram logo"
           height="60px"
-          width="70px" /> <!-- logo-->
+          width="70px" />
+        <!-- logo-->
       </a>
-      <a href="https://www.facebook.com/lingscars/"> <!-- facebook but link not working-->
+      <a href="https://www.facebook.com/lingscars/">
+        <!-- facebook but link not working-->
         <img
           src="img/facebook-2019-05-21.webp"
           alt="Facebook logo"
           height="60px"
-          width="70px" /> <!-- facebook logo-->
+          width="70px" />
+        <!-- facebook logo-->
         <!--facebook link not working so it won't load on the webpage-->
       </a>
     </footer>
