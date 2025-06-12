@@ -180,7 +180,7 @@ nav a:hover {
   -webkit-font-variant-ligatures: none;
   font-variant-ligatures: none;
   font-size: 1.3rem;
-  line-height: 3; /* spacing between lines  */
+  line-height: 4rem; /* spacing between lines  */
   color: #000000; /* Dark gray text */
   float: right; /* Float text to right */
   animation: zoomouti 0.6s ease-in-out forwards;
@@ -249,8 +249,6 @@ button {
   box-sizing: border-box; /* it's include padding and border in width */
 }
 
-
-
 #topj {
   display: none;
   position: fixed;
@@ -263,12 +261,12 @@ button {
   background-color: rgb(196, 255, 250);
   color: rgb(0, 0, 0);
   cursor: pointer;
-    padding: 18px 25px; /* increased padding for bigger size */
+  padding: 18px 25px; /* increased padding for bigger size */
   width: auto;
   min-width: 60px; /* slightly larger minimum */
   border-radius: 6px;
 }
 
 #topj:hover {
-  background-color:rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
 }
