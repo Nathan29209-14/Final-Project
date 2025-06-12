@@ -179,6 +179,31 @@ img:hover {
     </nav>
 </header>
 
+<!-- learn this from ww3 schoold   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top-->
+    <button onclick="topFunction()" id="topj" title="Go to top">Top</button>
+
+    <script>
+// Get the button
+let mybutton = document.getElementById("topj");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
 
 
 
@@ -189,7 +214,7 @@ img:hover {
     <div class="hero-content" tabindex="12">
         <h1 tabindex="12">Lease your Car Today </h1>
             <p tabindex="12">Find Your Ride Today </p>
-        <a href="car.html" class="btn" tabindex="12">Car leasing deals</a> <!-- the heading-->
+        <a href="car.html" class="cld" tabindex="12">Car leasing deals</a> <!-- the heading-->
     </div>
     </div>
     <hr class="hr">
@@ -225,7 +250,7 @@ img:hover {
     </div>
     </div>
     <br>
-    <a href="car.html" class="btn" tabindex="12">Car leasing deals</a>  <!-- button that takes you to the car leasing deals webpage-->
+    <a href="car.html" class="cld" tabindex="12">Car leasing deals</a>  <!-- button that takes you to the car leasing deals webpage-->
 </section>
 
 <!--vid-->
@@ -237,6 +262,12 @@ img:hover {
     </video>
 </div>
 <hr class="hr">
+<h2 style="text-align: center;">
+    <a href="under.maintenance.html" style="color: #0b4072; text-decoration: none;"><u>
+    This Website is still Under Maintenance</u>
+    </a>
+</h2>
+
 
 
 

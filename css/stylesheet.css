@@ -47,7 +47,7 @@ nav a:hover {
   font-size: xx-large;
 }
 
-.btn {
+.cld {
   padding: 0.8rem 1.5rem;
   background: #7f807f; /* gray background color */
   color: #ffffff; /* white text */
@@ -60,7 +60,7 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* shadow */
 }
 
-.btn:hover {
+.cld:hover {
   background-color: #6a6b6a; /* change on hover */
   transform: scale(1.05); /* makes it bigger */
 }
@@ -179,7 +179,7 @@ nav a:hover {
   font-family: "DIN", Arial, sans-serif;
   -webkit-font-variant-ligatures: none;
   font-variant-ligatures: none;
-  font-size: 100%;
+  font-size: 1.5rem;
   line-height: 3; /* spacing between lines  */
   color: #000000; /* Dark gray text */
   float: right; /* Float text to right */
@@ -247,4 +247,28 @@ button {
   width: 100%;
   max-width: 400px;
   box-sizing: border-box; /* it's include padding and border in width */
+}
+
+
+
+#topj {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 93px;
+  z-index: 99;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  background-color: rgb(196, 255, 250);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+    padding: 18px 25px; /* increased padding for bigger size */
+  width: auto;
+  min-width: 60px; /* slightly larger minimum */
+  border-radius: 6px;
+}
+
+#topj:hover {
+  background-color:rgb(247, 247, 247);
 }
