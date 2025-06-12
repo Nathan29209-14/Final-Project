@@ -120,32 +120,35 @@
       </ul>
     </nav>
 
-
     <!-- learn this from ww3 schoold   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top-->
     <button onclick="topFunction()" id="topj" title="Go to top">Top</button>
 
     <script>
-// Get the button
-let mybutton = document.getElementById("topj");
+      // Get the button
+      let mybutton = document.getElementById("topj");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
     <main>
       <hr class="hr" />
@@ -415,74 +418,86 @@ function topFunction() {
     </main>
     <hr class="hr" />
 
-    <h2 style="text-align: center;">
-  <a href="under.maintenance.html" style="color: #0b4072; text-decoration: none;"><u>
-    This Website is still Under Maintenance</u>
-  </a>
-</h2>
+    <h2 style="text-align: center">
+      <a
+        href="under.maintenance.html"
+        style="color: #0b4072; text-decoration: none"
+        ><u> This Website is still Under Maintenance</u>
+      </a>
+    </h2>
 
     <!--contact-->
     <br />
     <footer>
-        <h1 tabindex="12"><u>Contact</u></h1>
-        <!-- Contact / title -->
+      <h1 tabindex="12"><u>Contact</u></h1>
+      <!-- Contact / title -->
 
+      <p tabindex="12"><u>Phone number: 019-098-990</u></p>
+      <!-- the phone number-->
 
-        <p tabindex="12"><u>Phone number: 019-098-990</u></p>
-        <!-- the phone number-->
+      <p tabindex="12"><u>Mon-Fri 9am-5:30pm</u></p>
+      <!-- when the store is open-->
 
-        <p tabindex="12"><u>Mon-Fri 9am-5:30pm</u></p>
-        <!-- when the store is open-->
+      <p tabindex="12"><u>sales@lingscars.com</u></p>
+      <!-- the email-->
+      <p tabindex="12">
+        <u
+          >All images in the car and van leasing and home page was ai
+          generated</u
+        >
+      </p>
+      <!--All images in the car and van leasing and home page was ai
+            generated-->
 
-        <p tabindex="12"><u>sales@lingscars.com</u></p>
-        <!-- the email-->
-
-        <div style="text-align: right; margin-top: 10px; margin-right: 8%">
+      <div style="text-align: right; margin-top: 10px; margin-right: 8%">
         <h1 style="position: relative; top: -10rem; margin-bottom: 0">
-            <u tabindex="12">Information</u>
-            <!-- information/ title-->
+          <u tabindex="12">Information</u>
+          <!-- information/ title-->
         </h1>
         <a
-            href="aboutus.html"
-            style="
+          href="aboutus.html"
+          style="
             position: relative;
             top: -8.5rem;
             margin-bottom: 0;
             margin-right: 5%;
-            "
-            tabindex="12">About us</a
+          "
+          tabindex="12"
+          >About us</a
         >
         <!-- link that takes you to about us page-->
-        </div>
+      </div>
 
-        <a href="https://www.youtube.com/user/lingscars">
+      <a href="https://www.youtube.com/user/lingscars">
         <!-- ling cars channel-->
         <img
-            src="img/youtube.png"
-            alt="youtube logo"
-            height="60px"
-            width="65px" tabindex="12" />
+          src="img/youtube.png"
+          alt="youtube logo"
+          height="60px"
+          width="65px"
+          tabindex="12" />
         <!-- youtube logo-->
-        </a>
-        <a href="https://www.instagram.com/lings_cars/?hl=en">
+      </a>
+      <a href="https://www.instagram.com/lings_cars/?hl=en">
         <!-- lingcar instagram profile-->
         <img
-            src="img/insta.jfif"
-            alt="Instagram logo"
-            height="60px"
-            width="70px" tabindex="12" /><!-- instagram logo-->
-        </a>
-        <a href="https://www.facebook.com/lingscars/">
+          src="img/insta.jfif"
+          alt="Instagram logo"
+          height="60px"
+          width="70px"
+          tabindex="12" /><!-- instagram logo-->
+      </a>
+      <a href="https://www.facebook.com/lingscars/">
         <!-- lingcar facebook profile but the link is not working-->
         <img
-            src="img/facebook-2019-05-21.webp"
-            alt="Facebook logo"
-            height="60px"
-            width="70px" tabindex="12" />
+          src="img/facebook-2019-05-21.webp"
+          alt="Facebook logo"
+          height="60px"
+          width="70px"
+          tabindex="12" />
         <!-- facebook logo-->
         <!--facebook link not working so it won't load on the webpage-->
-        </a>
+      </a>
     </footer>
-
   </body>
 </html>
